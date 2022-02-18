@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front do back </title>
+
+    <script>
+        async function acessaDados() {
+
+            let response = await fetch('http://localhost:3000/operadores/inserir');
+            console.log(response);
+
+        }
+
+        acessaDados();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+//Retirei essas funcionalidades no menu principal left-sidebar-1 caso precise usar posteriormente, só linkar a rota dele no arquivo .json do menu que vai funfar

@@ -1,0 +1,2 @@
+///Eu removi estas funcionalidades no Menu, caso precise usar ela mais pra frente no projeto, só linkar ela no menu (left-sidebar-1)
+em modelo json que funfa

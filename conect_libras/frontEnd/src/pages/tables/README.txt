@@ -1,0 +1,1 @@
+//Desativei essa funcionalidades no menu principal left sidebar-1 , caso use mais la na frente, é so incorporar no menu (.json)a rota dessa funcionalidade
