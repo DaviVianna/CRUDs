@@ -1,0 +1,90 @@
+
+  /*MENU MOBILE*/
+
+  .btn-entrar-mobile {
+
+    background-color: #007E79;
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    border-bottom: none;
+    border-style: none;
+    transition: all 250ms linear 0s;
+
+  }
+
+
+  .navbar-toggler {
+
+    margin-left: 2rem;
+
+  }
+
+   .btn-entrar-mobile:hover {
+
+    background-color: #333333;
+    color: white;
+    
+   }
+
+
+   .navbar-nav-mobile > li > a {
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  
+   }
+
+   .navbar-nav-mobile > li > a:hover {
+
+    color: #007E79;
+
+   }
+
+
+   .area-image {
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+   }
+
+
+  /*input search*/
+
+
+  .input-search-mobile {
+
+    width: 40%;
+    margin: 0 auto;
+
+  }
+
+
+  .form-outline-mobile {
+
+    width: 100%;
+    border-radius: 7px;
+
+  }
+
+
+  .form-outline-mobile > input {
+
+    font-size: 1.4rem;
+    border-radius: 7px;
+
+  }

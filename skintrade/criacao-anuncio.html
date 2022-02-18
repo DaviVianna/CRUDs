@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinTrade</title>
+
+
+    <!--CDN MDBBOOTSTRAP-->
+
+       <!-- Font Awesome -->
+       <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+       rel="stylesheet"
+       />
+        <!-- Google Fonts -->
+       <link
+       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+       rel="stylesheet"
+       />
+        <!-- MDB -->
+       <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+       rel="stylesheet"
+       />
+
+       <!-- MDB -->
+         <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+         ></script>
+
+    <!--FIM DA IMPORTAÇÃO CDN-->
+
+   <!--Bootstrap CSS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+   rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+   crossorigin="anonymous">
+
+   <!--icons Bootstrap-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+   <!--Font Awesome-->
+   <script src="https://kit.fontawesome.com/2c1863f71c.js" crossorigin="anonymous"></script>
+   
+   <!--CSS normal-->
+   <link rel='stylesheet' type='text/css' media='screen' href='./css/styles.css'>
+
+
+</head>
+<body>
+
+    
+    <!--Header Menu-->
+    <header>
+    <div class="container">
+        <img
+        src="./assets/images/vector2.png"
+        alt="SkinTrade"
+        />
+
+        <div class="form-outline">
+        <i class="fas fa-search trailing input-search-icon"></i>
+        <input type="text" class="form-control form-icon-trailing input-search" />
+        <label class="form-label input-search-label">Busque uma arma ou um vendedor...</label>
+        </div>
+
+        <div class="menu-section">
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav>
+            <ul>
+            <li>
+                <a href="./Mercado.html">Mercado</a>
+            </li>
+            <li>
+                <a href="#">Quem somos</a>
+            </li>
+            <li>
+                <a href="./carrinho.html">Carrinho</a>
+            </li>
+            <li>
+                <a href="#" class="btn-entrar">
+                Entrar
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    </header>
+
+    <div class="container-fluid area-total-criacao-anuncio">
+        <!--breadCrumb-->
+       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-mercado">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./mercado.html">Inventario</a></li>
+            <li class="breadcrumb-item active" style="color: #000; font-weight: bold;" aria-current="page">Criação de anúncio</li>
+        </ol>
+       </nav>
+
+      <div class="paragraph-criacao-anuncio">
+        <h3 class="title-paragraph-criacao-anuncio">Criação de anúncio</h3>
+        <p class="subtitle-paragraph-criacao-anuncio">Seus itens. Coloque à venda.</p>
+      </div>   
+      
+        
+      <div class="form-outline input-price-criacao-anuncio">
+        <input type="number" id="typeNumber" class="form-control" />
+        <label class="form-label" for="typeNumber">Valor a ser recebido:  <strong>  R$</strong></label>
+      </div>
+
+      <div class="form-outline input-price-criacao-anuncio2">
+        <input type="number" id="typeNumber" class="form-control" />
+        <label class="form-label" for="typeNumber">Valor da venda:  <strong>  R$</strong></label>
+
+
+        <div class="input-group mb-3  input-radio-criacao-anuncio">
+            <input 
+            class="mt-2 subtitle-input-radio-criacao-anuncio" 
+            type="checkbox" 
+            value=""
+            />
+            
+            <label class="label-input-radio-criacao-anuncio">
+
+                Inpulsionar este anúncio
+                    
+                <!--Tooltip-->
+                <button 
+                type="button" 
+                class="btn-tooltip-page-criacao-anuncio" 
+                data-toggle="tooltip" 
+                data-placement="top"
+                title="Tooltip com descrição rápida dos benefícios do impulsionamento"
+                disabled="true"
+                > 
+                    <i class="bi bi-question-lg"></i>
+                </button>
+
+            </label>
+
+        </div>  
+                
+        <button 
+            type="button" 
+            class="btn disabled btn-criar-anuncio-disabled  btn-lg"
+            ><!-- CSS => btn-criar-anuncio-active-->
+            Criar anúncio
+        </button>
+  
+
+      </div>
+     
+    </div>
+  
+    <!--Fim da area-total-criacao-anuncio-->
+      
+    <!--area conteudo-->
+      <div class="container area-conteudo-criacao-anuncio">
+        <h5 class="title-conteudo-criacao-anuncio">Defina o preço</h5>
+        <p class="subtitle-conteudo-criacao-anuncio">Preço médio de venda</p>        
+      </div>
+      
+      <aside>
+            <section class="card-lateral-criacao-anuncio-produto">
+                <div class="area-foto-produto-criacao-anuncio">
+                    <img src="./assets/images/produto-card.jpg" />
+                </div>
+                <div class="detalhes-produtos-criacao-anuncio">
+                    <h4 class="title-detalhes-produtos-criacao-anuncio">AWP | Boom</h4>
+                    <p class="subttitle-detalhes-produtos-criacao-anuncio">Espingarda Sniper (Confidencial)<br>Coleção eSports 2013</p>
+                </div>
+                <div>
+                    <p class="estado-produto-criacao-anuncio">Nova de fabrica</p>
+                </div>
+                <div class="area-paragraph-detalhes-tecnicos-anuncio-criacao">
+                    <p class="paragraph1-detalhes-tecnicos-anuncio-criacao"><strong>Paint seed:</strong>  111</p>
+                    <p class="paragraph2-detalhes-tecnicos-anuncio-criacao"><strong>Paint Index:</strong>  222</p>
+                    <p class="paragraph3-detalhes-tecnicos-anuncio-criacao"><strong>Float:</strong>  0.1234567789</p>
+
+                    <div class="input-range-detalhe-produto-criacao-anuncio">
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                    </div>
+                    <div class="area-imagens-tecnicas-produto-criacao-anuncio">
+                        <p class="title-area-imagens-tecnicas">Stickers</p>
+                        <div class="">
+                            <div class="area-imagem1-detalhe-produto">
+                                <img src="./assets/images/inventario1.png" class="img1-detalhe-produto">
+                                <p class="title-imagem1-detalhe-produto"><strong>Fancy Koi (Foil)</strong><br>100%</p>
+                            </div>  
+                            <div class="area-imagem2-detalhe-produto">
+                                <img src="./assets/images/inventario2-cinza.png" class="img2-detalhe-produto">
+                                <p class="title-imagem2-detalhe-produto"><strong>Dragon Lore (Foil)</strong><br>100%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      </aside>  
+
+   
+        
+        
+       
+ 
+    <!--Footer-->
+    <section id="footer">
+
+        <!--Footer para MOBILE-->
+        <div class="container d-block d-sm-block d-md-none d-lg-none d-xl-none">
+
+            <div class="acordeon">
+                <!--Accordeon para MOBILE-->
+                <div class="row">
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                    <div id="accordion">
+                    <div class="acordeao-1">
+                        <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #fff;">
+                            Principal
+                        
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="text-white coluna1">
+                            <li><a href="#"  style="color: white ">Loja</a></li>
+                            <li><a href="#"  style="color: white ">Venda</a></li>
+                            <li><a href="#"  style="color: white ">Troca</a></li>
+                            <li><a href="#"  style="color: white ">FAQ</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                <div class="acordeao-2">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #fff; ">
+                        Assistência
+                    
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="text-white coluna2">
+                        <li><a href="#"  style="color: white ">Status dos Itens</a></li>
+                        <li><a href="#"  style="color: white ">Bots de Troca</a></li>
+                        <li><a href="#"  style="color: white ">Política de Preços</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="acordeao-3">
+                    <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #fff;">
+                        Recursos
+                    
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="text-white coluna3">
+                            <li><a href="#"  style="color: white ">Política de Privacidade</a></li>
+                            <li><a href="#"  style="color: white ">Pagamentos Recorrentes</a></li>
+                            <li><a href="#"  style="color: white ">Política de Cookies</a></li>
+                            <li><a href="#"  style="color: white ">Blog</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="logo-footer-mobile">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/Vector.png" alt="logo" height="90px" width="130px" class="logo-footer"></img>
+            </a>
+            </div>
+            <div class="container icons-footer-mobile">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                <ul class="media-link">
+                    <li>
+                    <a class="media1" href="#"><i class="bi bi-facebook" style="color: white;"></i></a>
+                    <a class="media2" href="#"><i class="bi bi-discord social2" style="color: white;"></i></a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                <ul class="media-link">
+                    <li>
+                    <a class="media3" href="#"><i class="bi bi-instagram" style="color: white;"></i></a>
+                    <a class="media4" href="#"><i class="fab fa-steam social3" style="color: white;"></i></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <!--Texto para mobile-->
+            <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+            <div class="texto-footer-mobile">
+                copyright &copy; 2021 SkinTrade - Todos os direitos reservados.
+            </div>
+            </div>  
+        </div>
+
+
+
+    <!--Footer para DESKTOP-->
+        <div class="container links-footer d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <div class="row">
+            <div class="col">
+            <h2 class="title-footer">Principal</h2>
+            <ul class="item-footer-principal">
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Venda</a></li>
+                <li><a href="#">Troca</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            </div>
+
+            <div class="col">
+            <h2 class="title-footer-assistencia">Assistencia</h2>
+            <ul class="item-footer-assitencia">
+                <li><a href="#">Status dos Itens</a></li>
+                <li><a href="#">Bots de troca</a></li>
+                <li><a href="#">Politica de preços</a></li>
+            </ul>
+            </div>
+
+            <div class="col">
+            <h2 class="title-footer-recursos">Recursos</h2>
+            <ul class="item-footer-recursos">
+                <li><a href="#">Politica de Privacidade</a></li>
+                <li><a href="#">Pagamentos recorrrentes</a></li>
+                <li><a href="#">Politica de cookies</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            </div>
+
+
+            <div class="col">
+            <div class="image-footer">
+                <img src="./assets/images/logo-vector.png"/>
+            </div>
+            <ul class="icons-footer">
+                <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-discord"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="fab fa-steam"></i></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <h2 class="paragrafo-footer">copyright &copy; 2021 SkinTrade - Todos os direitos reservados.</h2>
+        </div>
+
+    </section>
+
+
+
+    
+    
+</body>
+<!--Bootstrap JS, Jquery And Popper-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!--JS normal-->
+ <script type="text/javascript" src="./Js/javascript.js"></script>
+</html>

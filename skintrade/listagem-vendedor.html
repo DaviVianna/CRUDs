@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinTrade</title>
+
+
+    <!--CDN MDBBOOTSTRAP-->
+
+       <!-- Font Awesome -->
+       <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+       rel="stylesheet"
+       />
+        <!-- Google Fonts -->
+       <link
+       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+       rel="stylesheet"
+       />
+        <!-- MDB -->
+       <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+       rel="stylesheet"
+       />
+
+       <!-- MDB -->
+         <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+         ></script>
+
+    <!--FIM DA IMPORTAÇÃO CDN-->
+
+   <!--Bootstrap CSS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+   rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+   crossorigin="anonymous">
+
+   <!--icons Bootstrap-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+   <!--Font Awesome-->
+   <script src="https://kit.fontawesome.com/2c1863f71c.js" crossorigin="anonymous"></script>
+   
+   <!--CSS normal-->
+   <link rel='stylesheet' type='text/css' media='screen' href='./css/styles.css'>
+
+
+</head>
+<body>
+    
+ <!--Header Menu-->
+ <header>
+  <div class="container">
+    <img
+      src="./assets/images/vector2.png"
+      alt="SkinTrade"
+    />
+
+    <div class="form-outline">
+      <i class="fas fa-search trailing input-search-icon"></i>
+      <input type="text" class="form-control form-icon-trailing input-search" />
+      <label class="form-label input-search-label">Busque uma arma ou um vendedor...</label>
+    </div>
+
+    <div class="menu-section">
+      <div class="menu-toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./Mercado.html">Mercado</a>
+          </li>
+          <li>
+            <a href="#">Quem somos</a>
+          </li>
+          <li>
+            <a href="./carrinho.html">Carrinho</a>
+          </li>
+          <li>
+            <a href="#" class="btn-entrar">
+              Entrar
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+ </header>
+
+ 
+
+  <div class="container-fluid total-area-listagem-vendedor">
+
+       <!--breadCrumb-->
+       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-mercado">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./mercado.html">Mercado</a></li>
+            <li class="breadcrumb-item active" style="color: #000; font-weight: bold;" aria-current="page">Joaozinho123</li>
+        </ol>
+      </nav>
+        <!--AREA LATERAL DO PERFIL--> 
+        <aside>
+            <section class="area-perfil-listagem-vendedor">
+                <!--CARD DO PERFIL DO USUARIO-->
+                <div class="card-perfil-lateral-listagem-vendedor">
+                    <img src="./assets/images/user_perfil.png" alt="user" class="img-circle">              
+                    <div class="card-body">
+                        <h3 class="perfil-title">
+                          Joaozinho123
+                        </h3>
+                        <div class="tab-perfil-lateral-listagem-vendedor">
+
+                            <!-- Tabs navs -->
+                            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                                <li class="nav-item nav-item-listagem-vendedor" role="presentation">
+                                    <a
+                                        class="nav-link active"
+                                        id="ex1-tab-1"
+                                        data-mdb-toggle="tab"
+                                        href="#ex1-tabs-1"
+                                        role="tab"
+                                        aria-controls="ex1-tabs-1"
+                                        aria-selected="true"
+                                        >7 dias</a
+                                    >
+                                </li>
+                                <li class="nav-item nav-item-listagem-vendedor" role="presentation">
+                                    <a
+                                        class="nav-link"
+                                        id="ex1-tab-2"
+                                        data-mdb-toggle="tab"
+                                        href="#ex1-tabs-2"
+                                        role="tab"
+                                        aria-controls="ex1-tabs-2"
+                                        aria-selected="false"
+                                        >30 dias</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- Tabs navs -->
+                            
+                            <!-- Tabs content -->
+                            <div class="tab-content" id="ex1-content">
+                                <div
+                                class="tab-pane fade show active"
+                                id="ex1-tabs-1"
+                                role="tabpanel"
+                                aria-labelledby="ex1-tab-1"
+                                >
+                                    <p class="perfil-subtitle">Taxa de entrega/7d:   100%</p>
+                                    <p class="perfil-subtitle">Tempo de entrega/7d:   30 min</p>
+                                    <p class="perfil-subtitle">Compras sem entregar:  n/a</p>
+
+                                </div>
+                                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                            
+                                    <p class="perfil-subtitle">Taxa de entrega/7d: 100%</p>
+                                    <p class="perfil-subtitle">Tempo de entrega/7d: 30 min</p>
+                                    <p class="perfil-subtitle">Compras sem entregar:>n/a</p>
+
+                                </div>
+                            </div>
+                            <!-- Tabs content -->
+
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!--Conteudo da paga-->
+        <div class="container conteudo-page-listagem-vendedor">
+
+          
+          <!--MENU-FILTRO-->
+          
+            <div class="area-filtros-listagem-vendedor container-fluid">
+              <p class="title-filter-inventario">19882 Itens</p>
+                  <div class="form-outline input-inventario">
+                    <input type="text" id="form1" class="form-control" />
+                      <label class="form-label" for="form1">
+                        <i class="bi bi-search"></i>
+                        Busque uma arma ou Skin...
+                     </label>
+                  </div>
+                                          
+                  <div class="form-outline filter-price2-listagem-vendedor">
+                      <input 
+                        type="text" 
+                        id="typeText"
+                        class="form-control" 
+                       />
+                       <label class="form-label"><strong>Até: R$</strong></label>
+                     
+                  </div>
+
+                  <div class="form-outline filter-price-listagem-vendedor">
+                    <input 
+                    type="text" 
+                    class="form-control"
+                     />
+                    <label class="form-label"><strong>De: R$</strong></label>
+                  </div>
+
+                    <div class="filtros-checkbox-listagem-vendedor">
+                      <ul class="checkbox2-area-listagem-vendedor">
+                        <li>
+                          <p class="title-filter-checkbox2">Armas</p>
+                          <input type="checkbox"/>
+                          <label>Pistolas</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"/>
+                          <label>Escopetas</label>
+                        </li>
+                      </ul>
+                      <ul class="filtros-listagem-vendedor-checkbox2">
+                        <li>
+                          <input type="checkbox"/>
+                          <label>Rifles</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"/>
+                          <label>Metralhadoras</label>
+                         </li>
+                      </ul>         
+                      <ul class="filtros-listagem-vendedor-checkbox3">
+                        <li>
+                          <input type="checkbox"/>
+                          <label>Submetralhadoras</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"/>
+                          <label>Facas</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                <!--Fim dos filtros da tab 'Inventarios'-->
+
+      <!--SELECT - filtrando os itens-->
+      <div class="select-filter-listagem-vendedor">
+          <select class="form-select" placeholder="Itens por página">
+              <option selected disabled="true">Ordenar por:</option>
+              <option value="1">Mais populares</option>
+              <option value="2">12</option>
+              <option value="3">18</option>
+              <option value="4">22</option>
+          </select>
+      </div>
+
+      
+      <div class="area-exibicao-filtros-listagem-vendedor">
+
+          <div class="chip">
+            cz75 - auto
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+
+          <div class="chip">
+            cz75 - auto
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+
+
+          <div class="chip">
+            cz75 - auto
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+
+          <div class="chip">
+            cz75 - auto
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+
+          <div class="chip">
+            cz75 - auto
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+
+          <div class="chip">
+            cz75 - auto
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+
+
+          <div class="chip">
+            aa
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+          <div class="chip">
+            bb
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+          <div class="chip">
+            cc
+          <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+          <div class="chip">
+            dd
+            <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+          </div>
+         
+          <span class="closebtn clear-all-filters" onclick="this.parentElement.style.display='none'">Limpar filtros</span>
+  
+      </div>
+
+  
+
+      <!-- Tabs navs -->
+      <ul class="nav nav-tabs mb-3 icon-tab-listagem-produto" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="ex1-tab-3"
+            data-mdb-toggle="tab"
+            href="#ex1-tabs-3"
+            role="tab"
+            aria-controls="ex1-tabs-1"
+            aria-selected="true"
+            ><i class="bi bi-file"></i>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="ex1-tab-4"
+            data-mdb-toggle="tab"
+            href="#ex1-tabs-4"
+            role="tab"
+            aria-controls="ex1-tabs-2"
+            aria-selected="false"
+            >
+
+            <i class="bi bi-bookshelf"></i>
+            </a>
+        </li>
+      </ul>
+    <!-- Tabs navs -->
+
+    <!-- Tabs content -->
+    <div class="tab-content" id="ex1-content">
+      <div
+        class="tab-pane fade show active"
+        id="ex1-tabs-3"
+        role="tabpanel"
+        aria-labelledby="ex1-tab-1"
+      >
+        
+
+
+
+
+
+      <!-- 1º linha com 4 cards-->
+      <div class="card-group">
+        <!-- 1º card-->
+        <div class="card">
+              <ul class="item-link-card-home">
+                <li>
+                  <a href="#">
+                    <div class="state-glock-listagem-vendedor">
+                      <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                    </div>
+                    <div class="image-card-listagem-vendedor">
+                      <img src="./assets/images/produto-card.jpg" />
+                    </div>  
+                    <div class="content-listagem-vendedor">
+                      <h4 class="title-listagem-vendedor">
+                      Arma | Skin
+                      </h4>
+                      <div class="info-listagem-vendedor">
+                        <div class="info">
+                          <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                          <div class="icon-plus">
+                              <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                          </div>
+                        </div>
+                        <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                        <div class="img-inventario-listagem-vendedor">
+                            <img src="./assets/images/inventario1.png" alt="" class="img1">
+                        </div>
+                        <div class="img-inventario-listagem-vendedor">
+                            <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                        </div>
+                        <div class="range input-range-listagem-vendedor">
+                          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+        </div>
+
+        <!-- 2º card-->
+        <div class="card">
+            <ul class="item-link-card-home">
+              <li>
+                <a href="#">
+                  <div class="state-glock-listagem-vendedor">
+                    <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                  </div>
+                  <div class="image-card-listagem-vendedor">
+                    <img src="./assets/images/produto-card.jpg" />
+                  </div>  
+                  <div class="content-listagem-vendedor">
+                    <h4 class="title-listagem-vendedor">
+                    Arma | Skin
+                    </h4>
+                    <div class="info-listagem-vendedor">
+                      <div class="info">
+                        <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                        <div class="icon-plus">
+                            <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario1.png" alt="" class="img1">
+                      </div>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                      </div>
+                      <div class="range input-range-listagem-vendedor">
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                      </div>
+
+                  
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </div>
+
+
+        <!-- 3º card-->
+        <div class="card">
+              <ul class="item-link-card-home">
+                <li>
+                  <a href="#">
+                    <div class="state-glock-listagem-vendedor">
+                      <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                    </div>
+                    <div class="image-card-listagem-vendedor">
+                      <img src="./assets/images/produto-card.jpg" />
+                    </div>  
+                    <div class="content-listagem-vendedor">
+                      <h4 class="title-listagem-vendedor">
+                      Arma | Skin
+                      </h4>
+                      <div class="info-listagem-vendedor">
+                        <div class="info">
+                          <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                          <div class="icon-plus">
+                              <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                          </div>
+                        </div>
+                        <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                        <div class="img-inventario-listagem-vendedor">
+                            <img src="./assets/images/inventario1.png" alt="" class="img1">
+                        </div>
+                        <div class="img-inventario-listagem-vendedor">
+                            <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                        </div>
+                        <div class="range input-range-listagem-vendedor">
+                          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+        </div>
+
+        <!-- 4º card-->
+        <div class="card">
+            <ul class="item-link-card-home">
+              <li>
+                <a href="#">
+                  <div class="state-glock-listagem-vendedor">
+                    <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                  </div>
+                  <div class="image-card-listagem-vendedor">
+                    <img src="./assets/images/produto-card.jpg" />
+                  </div>  
+                  <div class="content-listagem-vendedor">
+                    <h4 class="title-listagem-vendedor">
+                    Arma | Skin
+                    </h4>
+                    <div class="info-listagem-vendedor">
+                      <div class="info">
+                        <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                        <div class="icon-plus">
+                            <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario1.png" alt="" class="img1">
+                      </div>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                      </div>
+                      <div class="range input-range-listagem-vendedor">
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- 2º linha com 4 cards-->
+      <div class="card-group">
+    <!-- 1º card-->
+    <div class="card">
+        <ul class="item-link-card-home">
+          <li>
+            <a href="#">
+              <div class="state-glock-listagem-vendedor">
+                <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+              </div>
+              <div class="image-card-listagem-vendedor">
+                <img src="./assets/images/produto-card.jpg" />
+              </div>  
+              <div class="content-listagem-vendedor">
+                <h4 class="title-listagem-vendedor">
+                Arma | Skin
+                </h4>
+                <div class="info-listagem-vendedor">
+                  <div class="info">
+                    <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                    <div class="icon-plus">
+                        <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                  <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                  <div class="img-inventario-listagem-vendedor">
+                      <img src="./assets/images/inventario1.png" alt="" class="img1">
+                  </div>
+                  <div class="img-inventario-listagem-vendedor">
+                      <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                  </div>
+                  <div class="range input-range-listagem-vendedor">
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+
+        <!-- 2º card-->
+    <div class="card">
+      <ul class="item-link-card-home">
+        <li>
+          <a href="#">
+            <div class="state-glock-listagem-vendedor">
+              <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+            </div>
+            <div class="image-card-listagem-vendedor">
+              <img src="./assets/images/produto-card.jpg" />
+            </div>  
+            <div class="content-listagem-vendedor">
+              <h4 class="title-listagem-vendedor">
+              Arma | Skin
+              </h4>
+              <div class="info-listagem-vendedor">
+                <div class="info">
+                  <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                  <div class="icon-plus">
+                      <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                  </div>
+                </div>
+                <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                <div class="img-inventario-listagem-vendedor">
+                    <img src="./assets/images/inventario1.png" alt="" class="img1">
+                </div>
+                <div class="img-inventario-listagem-vendedor">
+                    <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                </div>
+                <div class="range input-range-listagem-vendedor">
+                  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+      <!-- 3º card-->
+      <div class="card">
+        <ul class="item-link-card-home">
+          <li>
+            <a href="#">
+              <div class="state-glock-listagem-vendedor">
+                <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+              </div>
+              <div class="image-card-listagem-vendedor">
+                <img src="./assets/images/produto-card.jpg" />
+              </div>  
+              <div class="content-listagem-vendedor">
+                <h4 class="title-listagem-vendedor">
+                Arma | Skin
+                </h4>
+                <div class="info-listagem-vendedor">
+                  <div class="info">
+                    <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                    <div class="icon-plus">
+                        <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                  <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                  <div class="img-inventario-listagem-vendedor">
+                      <img src="./assets/images/inventario1.png" alt="" class="img1">
+                  </div>
+                  <div class="img-inventario-listagem-vendedor">
+                      <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                  </div>
+                  <div class="range input-range-listagem-vendedor">
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+
+        <!-- 4º card-->
+    <div class="card">
+      <ul class="item-link-card-home">
+        <li>
+          <a href="#">
+            <div class="state-glock-listagem-vendedor">
+              <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+            </div>
+            <div class="image-card-listagem-vendedor">
+              <img src="./assets/images/produto-card.jpg" />
+            </div>  
+            <div class="content-listagem-vendedor">
+              <h4 class="title-listagem-vendedor">
+              Arma | Skin
+              </h4>
+              <div class="info-listagem-vendedor">
+                <div class="info">
+                  <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                  <div class="icon-plus">
+                      <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                  </div>
+                </div>
+                <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                <div class="img-inventario-listagem-vendedor">
+                    <img src="./assets/images/inventario1.png" alt="" class="img1">
+                </div>
+                <div class="img-inventario-listagem-vendedor">
+                    <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                </div>
+                <div class="range input-range-listagem-vendedor">
+                  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+      </div>
+
+      <!-- 3º linha com 4 cards-->
+      <div class="card-group">
+      <!-- 1º card-->
+      <div class="card">
+          <ul class="item-link-card-home">
+            <li>
+              <a href="#">
+                <div class="state-glock-listagem-vendedor">
+                  <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                </div>
+                <div class="image-card-listagem-vendedor">
+                  <img src="./assets/images/produto-card.jpg" />
+                </div>  
+                <div class="content-listagem-vendedor">
+                  <h4 class="title-listagem-vendedor">
+                  Arma | Skin
+                  </h4>
+                  <div class="info-listagem-vendedor">
+                    <div class="info">
+                      <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                      <div class="icon-plus">
+                          <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                    <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario1.png" alt="" class="img1">
+                    </div>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                    </div>
+                    <div class="range input-range-listagem-vendedor">
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+
+
+              <!-- 2º card-->
+          <div class="card">
+            <ul class="item-link-card-home">
+              <li>
+                <a href="#">
+                  <div class="state-glock-listagem-vendedor">
+                    <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                  </div>
+                  <div class="image-card-listagem-vendedor">
+                    <img src="./assets/images/produto-card.jpg" />
+                  </div>  
+                  <div class="content-listagem-vendedor">
+                    <h4 class="title-listagem-vendedor">
+                    Arma | Skin
+                    </h4>
+                    <div class="info-listagem-vendedor">
+                      <div class="info">
+                        <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                        <div class="icon-plus">
+                            <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario1.png" alt="" class="img1">
+                      </div>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                      </div>
+                      <div class="range input-range-listagem-vendedor">
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+            <!-- 3º card-->
+            <div class="card">
+              <ul class="item-link-card-home">
+                <li>
+                  <a href="#">
+                    <div class="state-glock-listagem-vendedor">
+                      <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                    </div>
+                    <div class="image-card-listagem-vendedor">
+                      <img src="./assets/images/produto-card.jpg" />
+                    </div>  
+                    <div class="content-listagem-vendedor">
+                      <h4 class="title-listagem-vendedor">
+                      Arma | Skin
+                      </h4>
+                      <div class="info-listagem-vendedor">
+                        <div class="info">
+                          <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                          <div class="icon-plus">
+                              <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                          </div>
+                        </div>
+                        <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                        <div class="img-inventario-listagem-vendedor">
+                            <img src="./assets/images/inventario1.png" alt="" class="img1">
+                        </div>
+                        <div class="img-inventario-listagem-vendedor">
+                            <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                        </div>
+                        <div class="range input-range-listagem-vendedor">
+                          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+
+              <!-- 4º card-->
+          <div class="card">
+            <ul class="item-link-card-home">
+              <li>
+                <a href="#">
+                  <div class="state-glock-listagem-vendedor">
+                    <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                  </div>
+                  <div class="image-card-listagem-vendedor">
+                    <img src="./assets/images/produto-card.jpg" />
+                  </div>  
+                  <div class="content-listagem-vendedor">
+                    <h4 class="title-listagem-vendedor">
+                    Arma | Skin
+                    </h4>
+                    <div class="info-listagem-vendedor">
+                      <div class="info">
+                        <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                        <div class="icon-plus">
+                            <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario1.png" alt="" class="img1">
+                      </div>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                      </div>
+                      <div class="range input-range-listagem-vendedor">
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+      <!-- 4º linha com 4 cards-->
+      <div class="card-group">
+
+
+      <!-- 1º card-->
+      <div class="card">
+            <ul class="item-link-card-home">
+              <li>
+                <a href="#">
+                  <div class="state-glock-listagem-vendedor">
+                    <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                  </div>
+                  <div class="image-card-listagem-vendedor">
+                    <img src="./assets/images/produto-card.jpg" />
+                  </div>  
+                  <div class="content-listagem-vendedor">
+                    <h4 class="title-listagem-vendedor">
+                    Arma | Skin
+                    </h4>
+                    <div class="info-listagem-vendedor">
+                      <div class="info">
+                        <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                        <div class="icon-plus">
+                            <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario1.png" alt="" class="img1">
+                      </div>
+                      <div class="img-inventario-listagem-vendedor">
+                          <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                      </div>
+                      <div class="range input-range-listagem-vendedor">
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+      </div>
+
+      <!-- 2º card-->
+      <div class="card">
+          <ul class="item-link-card-home">
+            <li>
+              <a href="#">
+                <div class="state-glock-listagem-vendedor">
+                  <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                </div>
+                <div class="image-card-listagem-vendedor">
+                  <img src="./assets/images/produto-card.jpg" />
+                </div>  
+                <div class="content-listagem-vendedor">
+                  <h4 class="title-listagem-vendedor">
+                  Arma | Skin
+                  </h4>
+                  <div class="info-listagem-vendedor">
+                    <div class="info">
+                      <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                      <div class="icon-plus">
+                          <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                    <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario1.png" alt="" class="img1">
+                    </div>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                    </div>
+                    <div class="range input-range-listagem-vendedor">
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- 3º card-->
+      <div class="card">
+          <ul class="item-link-card-home">
+            <li>
+              <a href="#">
+                <div class="state-glock-listagem-vendedor">
+                  <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                </div>
+                <div class="image-card-listagem-vendedor">
+                  <img src="./assets/images/produto-card.jpg" />
+                </div>  
+                <div class="content-listagem-vendedor">
+                  <h4 class="title-listagem-vendedor">
+                  Arma | Skin
+                  </h4>
+                  <div class="info-listagem-vendedor">
+                    <div class="info">
+                      <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                      <div class="icon-plus">
+                          <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                    <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario1.png" alt="" class="img1">
+                    </div>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                    </div>
+                    <div class="range input-range-listagem-vendedor">
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- 4º card-->
+      <div class="card">
+          <ul class="item-link-card-home">
+            <li>
+              <a href="#">
+                <div class="state-glock-listagem-vendedor">
+                  <p class="text-glock-listagem-vendedor">Estado de conservacao</p>
+                </div>
+                <div class="image-card-listagem-vendedor">
+                  <img src="./assets/images/produto-card.jpg" />
+                </div>  
+                <div class="content-listagem-vendedor">
+                  <h4 class="title-listagem-vendedor">
+                  Arma | Skin
+                  </h4>
+                  <div class="info-listagem-vendedor">
+                    <div class="info">
+                      <h4 class="price-listagem-vendedor">R$ 99.999,00</h4>
+                      <div class="icon-plus">
+                          <button type="button" class="btn-add-produto-listagem-vendedor"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                    <p class="btn-carrinho-listagem-vendedor">Comprar</p>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario1.png" alt="" class="img1">
+                    </div>
+                    <div class="img-inventario-listagem-vendedor">
+                        <img src="./assets/images/inventario2-cinza.png" alt="" class="img2">
+                    </div>
+                    <div class="range input-range-listagem-vendedor">
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+
+       <!--Pagination-->
+       <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination pagination-page-listagem-vendedor justify-content-center pagination-lg">
+          <li class="page-item">
+            <a class="page-link" href="#">Anterior</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Próximo</a>
+          </li>
+        </ul>
+      </nav>	
+    </div>
+
+
+
+    <!--TAB 2 COM CARDS HORIZONTAIS EM LINHA-->
+      <div class="tab-pane fade conteudo-card-horizontal-linha-page-listagem-vendedor" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-2"> 
+
+        <!--CARD-->
+        <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+         <!--CARD-->
+         <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+        <div class="card-horizontal-listagem-vendedor">
+          <a href="#" class="link-card-horizontal-listagem-vendedor">
+            <div class="area-image-card-minhas-compras">
+              <img src="./assets/images/arma1_anuncio.png"  alt="...">
+          </div>
+
+          <div class="detalhes-item-card-horizontal">
+            <h5 class="title-card-anuncio">Arma | Skin</h5>
+            <div class="estado-conservacao-anuncio-listagem-vendedor">
+                <p class="paragraph-estado-conservacao">Estado de conservação</p>
+            </div>
+            
+            <div class="area-input-estado-arma">
+              <input type="range" class="input-range-card-horizonal-listagem-vendedor">
+            </div>
+        
+            <div class="imagens-card-minha-compra">
+                <img src="./assets/images/inventario1.png" class="img1-card-anuncio">
+                <img src="./assets/images/inventario2-cinza.png" class="img2-card-anuncio">
+            </div>
+            <div class="area-preco-produto-minhas-compras">
+                <h5 class="title-price-produto-minhas-compras">R$99.999,00</h5>
+            </div>
+            <button 
+              type="button" 
+              class="area-icon-card-listagem-vendedor"
+            >
+              <i class="bi bi-plus-lg" style="color: #007E79;"></i>
+            </button>
+    
+            <div class="area-detalhes-produto-tab-historico">
+              <button 
+              type="button" 
+              class="btn-compra"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          </a>
+        </div>
+
+
+
+
+        <!--Pagination-->
+        <nav aria-label="Navegação de página exemplo">
+          <ul class="pagination pagination-page-listagem-vendedor-tab-horizontal justify-content-center pagination-lg">
+            <li class="page-item">
+              <a class="page-link" href="#">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Próximo</a>
+            </li>
+          </ul>
+        </nav>	
+
+      </div>
+      
+    <!--FIM DA TAB 2 COM CARDS HORIZONTAIS EM LINHA-->
+    </div>
+    </div>
+  </div>
+
+    
+
+ 
+  <!--Footer-->
+  <section id="footer">
+
+      <!--Footer para MOBILE-->
+      <div class="container d-block d-sm-block d-md-none d-lg-none d-xl-none">
+
+          <div class="acordeon">
+            <!--Accordeon para MOBILE-->
+            <div class="row">
+              <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                <div id="accordion">
+                  <div class="acordeao-1">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #fff;">
+                          Principal
+                       
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul class="text-white coluna1">
+                          <li><a href="#"  style="color: white ">Loja</a></li>
+                          <li><a href="#"  style="color: white ">Venda</a></li>
+                          <li><a href="#"  style="color: white ">Troca</a></li>
+                          <li><a href="#"  style="color: white ">FAQ</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              <div class="acordeao-2">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #fff; ">
+                      Assistência
+                   
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="text-white coluna2">
+                      <li><a href="#"  style="color: white ">Status dos Itens</a></li>
+                      <li><a href="#"  style="color: white ">Bots de Troca</a></li>
+                      <li><a href="#"  style="color: white ">Política de Preços</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="acordeao-3">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #fff;">
+                      Recursos
+                   
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                      <ul class="text-white coluna3">
+                        <li><a href="#"  style="color: white ">Política de Privacidade</a></li>
+                        <li><a href="#"  style="color: white ">Pagamentos Recorrentes</a></li>
+                        <li><a href="#"  style="color: white ">Política de Cookies</a></li>
+                        <li><a href="#"  style="color: white ">Blog</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="logo-footer-mobile">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/Vector.png" alt="logo" height="90px" width="130px" class="logo-footer"></img>
+          </a>
+        </div>
+        <div class="container icons-footer-mobile">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <ul class="media-link">
+                <li>
+                  <a class="media1" href="#"><i class="bi bi-facebook" style="color: white;"></i></a>
+                  <a class="media2" href="#"><i class="bi bi-discord social2" style="color: white;"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <ul class="media-link">
+                <li>
+                  <a class="media3" href="#"><i class="bi bi-instagram" style="color: white;"></i></a>
+                  <a class="media4" href="#"><i class="fab fa-steam social3" style="color: white;"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Texto para mobile-->
+        <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+          <div class="texto-footer-mobile">
+            copyright &copy; 2021 SkinTrade - Todos os direitos reservados.
+          </div>
+        </div>  
+      </div>
+
+
+
+  <!--Footer para DESKTOP-->
+    <div class="container links-footer d-none d-sm-none d-md-block d-lg-block d-xl-block">
+      <div class="row">
+        <div class="col">
+          <h2 class="title-footer">Principal</h2>
+          <ul class="item-footer-principal">
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Venda</a></li>
+            <li><a href="#">Troca</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="title-footer-assistencia">Assistencia</h2>
+          <ul class="item-footer-assitencia">
+            <li><a href="#">Status dos Itens</a></li>
+            <li><a href="#">Bots de troca</a></li>
+            <li><a href="#">Politica de preços</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h2 class="title-footer-recursos">Recursos</h2>
+          <ul class="item-footer-recursos">
+            <li><a href="#">Politica de Privacidade</a></li>
+            <li><a href="#">Pagamentos recorrrentes</a></li>
+            <li><a href="#">Politica de cookies</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col">
+          <div class="image-footer">
+            <img src="./assets/images/logo-vector.png"/>
+          </div>
+          <ul class="icons-footer">
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-discord"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="fab fa-steam"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="paragrafo-footer">copyright &copy; 2021 SkinTrade - Todos os direitos reservados.</h2>
+    </div>
+
+  </section>
+
+
+
+    
+    
+</body>
+<!--Bootstrap JS, Jquery And Popper-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!--JS normal-->
+ <script type="text/javascript" src="./Js/javascript.js"></script>
+</html>

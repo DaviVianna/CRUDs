@@ -1,0 +1,3552 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SkinTrade</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="responsive.css"
+      media="screen and (max-width: 768px)"
+    />
+    <meta charset="utf-8">
+
+    <!--CDN MDBBOOTSTRAP-->
+
+       <!-- Font Awesome -->
+       <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+       rel="stylesheet"
+       />
+     <!-- Google Fonts -->
+       <link
+       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+       rel="stylesheet"
+       />
+     <!-- MDB -->
+       <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+       rel="stylesheet"
+       />
+
+       <!-- MDB -->
+         <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+         ></script>
+
+   <!--FIM DA IMPORTAÇÃO CDN-->
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+     crossorigin="anonymous">
+ 
+     <!--icons Bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     
+     <script src="https://kit.fontawesome.com/2c1863f71c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!--HEADER MENU MOBILE-->
+    <nav class="navbar navbar-expand-lg d-lg-none d-xl-none d-xxl-none menu-responivo" style="background-color: #333333;">
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarTogglerDemo01" 
+      aria-controls="navbarTogglerDemo01" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+      style="color: #007E79;"
+      >
+      <i class="bi bi-border-width" style="font-size: 2rem
+      ;"></i>
+      </button>
+      
+      <div class="area-image ">
+        <img src="./assets/images/vector3.png" class="d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none"/>
+        <img src="./assets/images/vector2.png" class="d-xs-none d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block"/>
+      </div>
+
+      <div class="input-search-mobile">
+        <div class="form-outline-mobile">
+          <input 
+          type="text" 
+          id="typeText" 
+          class="form-control" 
+          placeholder="Busque uma arma ou vendedor..."
+          />
+          
+        </div>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-nav-mobile">
+          <li class="nav-item active">
+            <a class="nav-link" href="./Mercado.html">
+              Mercado
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Quem somos
+            </a>
+          </li>
+        </ul>
+      
+        <a href="#">
+          <button class="btn-entrar-mobile">
+            Entrar
+          </button>
+        </a>
+   
+      </div>
+    </nav>
+
+    <!--
+    <div class="collapse d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark d-lg-none d-xl-none d-xxl-none">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  -->
+
+    <!--Header Menu-->
+  <header class="d-xl-block d-lg-block  d-none">
+      <div class="container">
+        <img
+          src="./assets/images/vector2.png"
+          alt="SkinTrade"
+        />
+
+        <div class="form-outline">
+          <i class="fas fa-search trailing input-search-icon"></i>
+          <input 
+          type="text" 
+          class="form-control form-icon-trailing input-search" 
+          style="font-size: 1.5rem;"
+          />
+          <label class="form-label input-search-label" style="font-size: 1.3rem; width: 100%;">
+            Busque uma arma ou um vendedor...
+          </label>
+        </div>
+
+        <div class="menu-section">
+            <ul>
+              <li>
+                <a href="./Mercado.html">Mercado</a>
+              </li>
+              <li>
+                <a href="#">Quem somos</a>
+              </li>
+              <li class="area-btn-entrar">
+                <a href="#" class="btn-entrar">
+                  Entrar
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+  </header>
+
+
+  <!--CARROSSEL PARA MOBILE-->
+  <section class="hero d-xs-block d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none"> 
+    
+    <div id="carouselExampleControls" class="carousel slide d-xs-block d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!--slide 1-->
+        <div class="carousel-item active">
+          <img src="./assets/images/fundo-mobile2.jpg" class="d-block w-100" alt="fundo_cinza">
+          <img src="./assets/images/arma_carrossel.png" class="d-block glock-mobile" alt="arma">
+          <div class="carousel-caption-mobile d-block d-sm-block d-md-block d-lg-block d-xl-block">
+            <h2 class="title-carousel-mobile">Compre e venda<br> da comunidade</h2>
+            <p class="subtitle-carousel-mobile">SkinTrade permite que voce negocie com<br>outros jogadores e saque seu dinheiro.</p>
+            <a href="#" class="botao-cta-carrossel-mobile">
+              <button class="main-btn-cta-carrossel-mobile" type="button">
+                Comece agora
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!--slide 2-->
+        <div class="carousel-item">
+          <img src="./assets/images/fundo-mobile2.jpg" class="d-block w-100" alt="fundo_cinza">
+          <img src="./assets/images/arma_carrossel.png" class="d-block glock-mobile" alt="arma">
+          <div class="carousel-caption-mobile d-block d-sm-block d-md-block d-lg-block d-xl-block">
+            <h2 class="title-carousel-mobile">Compre e venda<br> da comunidade</h2>
+            <p class="subtitle-carousel-mobile">SkinTrade permite que voce negocie com<br>outros jogadores e saque seu dinheiro.</p>
+            <a href="#" class="botao-cta-carrossel-mobile">
+              <button class="main-btn-cta-carrossel-mobile" type="button">
+                Comece agora
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!--slide 3-->
+        <div class="carousel-item">
+          <img src="./assets/images/fundo-mobile2.jpg" class="d-block w-100" alt="fundo_cinza">
+          <img src="./assets/images/arma_carrossel.png" class="d-block glock-mobile" alt="arma">
+          <div class="carousel-caption-mobile d-block d-sm-block d-md-block d-lg-block d-xl-block">
+            <h2 class="title-carousel-mobile">Compre e venda<br> da comunidade</h2>
+            <p class="subtitle-carousel-mobile">SkinTrade permite que voce negocie com<br>outros jogadores e saque seu dinheiro.</p>
+            <a href="#" class="botao-cta-carrossel-mobile">
+              <button class="main-btn-cta-carrossel-mobile" type="button">
+                Comece agora
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev carousel-control-prev-mobile" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next carousel-control-next-mobile" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!--Carrossel-->
+  <section class="hero d-none d-sm-block">
+      
+      <div class="container-fluid carrossel d-block d-sm-block d-md-block d-lg-block d-xl-block">
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+      
+          <div class="carousel-inner">
+            
+            <!--Slide 1-->
+            <div class="carousel-item active">
+              <img src="./assets/images/fundo-carrossel.png" class="d-block w-100" alt="fundo_cinza">
+              <img src="./assets/images/arma_carrossel.png" class="d-block glock" alt="arma">
+              <div class="carousel-caption d-block d-sm-block d-md-block d-lg-block d-xl-block">
+                <h2 class="title-carousel">Compre e venda<br> da comunidade</h2>
+                <p class="subtitle-carousel">SkinTrade permite que voce negocie com outros jogadores e saque seu dinheiro.</p>
+                <a href="#" class="botao-cta-carrossel">
+                  <button class="main-btn-cta-carrossel" type="button">
+                    Comece agora
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <!--slide 2-->
+              <div class="carousel-item">
+                <img src="./assets/images/fundo-carrossel.png" class="d-block w-100" alt="arma">
+                <img src="./assets/images/arma_carrossel.png" class="d-block glock" alt="arma">
+                <div class="carousel-caption d-block d-sm-block d-md-block d-lg-block d-xl-block">
+                  <h2 class="title-carousel">Compre e venda<br> da comunidade</h2>
+                  <p class="subtitle-carousel">SkinTrade permite que voce negocie com<br>outros jogadores e saque seu dinheiro.</p>
+                  <a href="#" class="botao-cta-carrossel"><button class="main-btn-cta-carrossel" type="button">Comece agora</button></a>
+                </div>
+              </div>
+    
+            <!--slide 3-->
+            <div class="carousel-item">
+              <img src="./assets/images/fundo-carrossel.png" class="d-block w-100" alt="arma">
+              <img src="./assets/images/arma_carrossel.png" class="d-block glock" alt="arma">
+              <div class="carousel-caption d-block d-sm-block d-md-block d-lg-block d-xl-block">
+                <h2 class="title-carousel">Compre e venda<br> da comunidade</h2>
+                <p class="subtitle-carousel">SkinTrade permite que voce negocie com<br>outros jogadores e saque seu dinheiro.</p>
+                <a href="#" class="botao-cta-carrossel">
+                  <button 
+                    class="main-btn-cta-carrossel" 
+                    type="button"
+                    >
+                    Comece agora
+                  </button>
+                </a>
+              </div>
+            </div>
+
+              <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" arial-hidden="true"  style="background-color: #007E79;"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+        
+              <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: #007E79;"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+          </a>
+        </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <!---------------------------------------------------AREA CARDS PARA MOBILE------------------------------------------------------------------->
+  <main class="area-cards-mobile d-xs-block d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none teste2">
+    <div class="container-fluid">
+
+         
+      <div class="chip-cookies-mobile">
+        A SkinTrade usa cookies para personalizar conteúdos e melhorar sua experiência. Ao continuar navegando, você concorda com a nossa
+        <a href="#" style="color: #7A04A5;">Política de cookies.</a>
+        <span class="closebtn" onclick="this.parentElement.style.display='none'" style="color: #333333">&times;</span>
+      </div>
+
+      <!-- Tabs navs -->
+      <ul class="nav nav-tabs nav-fill mb-3 tabs-cards-mobile" id="ex1" role="tablist">
+          <li class="nav-item item-tab" role="presentation">
+            <a
+              class="nav-link active"
+              id="ex2-tab-1"
+              data-mdb-toggle="tab"
+              href="#ex2-tabs-1"
+              role="tab"
+              aria-controls="ex2-tabs-1"
+              style="color: #007E79;">Populares
+            </a>
+          </li>
+          <li class="nav-item item-tab" role="presentation">
+            <a
+              class="nav-link"
+              id="ex2-tab-2"
+              data-mdb-toggle="tab"
+              href="#ex2-tabs-2"
+              role="tab"
+              aria-controls="ex2-tabs-2"
+              aria-selected="false"
+              style="color: #007E79;"
+              >Novos</a>
+          </li>
+          <li class="nav-item item-tab" role="presentation">
+            <a
+              class="nav-link"
+              id="ex2-tab-3"
+              data-mdb-toggle="tab"
+              href="#ex2-tabs-3"
+              role="tab"
+              aria-controls="ex2-tabs-3"
+              aria-selected="false"
+              style="color: #007E79;"
+            >Top Itens</a>
+          </li>
+      </ul>
+
+      <div class="tab-content" id="ex2-content">
+
+        <!---------------------------------------------------------TAB 1 POPULARES----------------------------------------------------------------->
+        <div class="tab-pane fade show active teste" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
+
+          <ul class="nav nav-tabs d-block d-sm-none d-md-none d-lg-none d-xl-none box-column" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="ex1-tab-1"
+                  data-mdb-toggle="tab"
+                  href="#ex1-tabs-1"
+                  role="tab"
+                  aria-controls="ex1-tabs-1"
+                  aria-selected="true"
+                  >
+                    <div class="box-column-two">
+                      <img src="./assets/images/retangule.png" alt="retangule">
+                      <img src="./assets/images/retangule.png" alt="retangule">
+                    </div>
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="ex3-tab-3"
+                  data-mdb-toggle="tab"
+                  href="#ex3-tabs-3"
+                  role="tab"
+                  aria-controls="ex3-tabs-3"
+                  aria-selected="false"
+                  >
+
+                  <div class="box-column-one">
+                    <img src="./assets/images/Retangule2.png" alt="">
+                  </div>
+                
+                </a>
+              </li>
+          </ul>
+
+          <!--CARD EM 2 COLUNAS-->
+          <div class="tab-pane fade show active tab-2-colunas" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+            <div class="area-cards-2-colunas">
+
+              <!--AREA CARDS LADO ESQUERDO-->
+              <!--DEVERÁ CONTER 6 CARDS POR PAGE-->
+              <div class="area-cards-lado-esquerdo">
+
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+               
+              </div>   
+    
+
+              <!--AREA CARDS LADO DIREITO-->
+              <!--DEVERÁ CONTER 6 CARDS POR PAGE-->
+              <div class="area-cards-lado-direito">   
+
+
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+
+              
+              </div>
+            </div>
+
+            <!--PAGINATION TAB POPULARES-->
+            <nav aria-label="..." class="">
+              <ul class="pagination pagination-tab-mobile-populares">
+                <li class="page-item">
+                  <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li>
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Próximo</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <!--CARD EM 1 COLUNA-->
+          <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex3-tab-3">
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            
+
+            <!--PAGINATION TAB POPULARES-->
+            <nav aria-label="..." class="">
+              <ul class="pagination pagination-tab-mobile-populares">
+                <li class="page-item">
+                  <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li>
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Próximo</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+        <!------------------------------------------------------FIM DA TAB 1 POPULARES------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+        <!---------------------------------------------------------TAB 2 NOVOS---------------------------------------------------------------------->
+        <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+          <ul class="nav nav-tabs d-block d-sm-none d-md-none d-lg-none d-xl-none box-column" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex4-tab-4"
+                data-mdb-toggle="tab"
+                href="#ex4-tabs-4"
+                role="tab"
+                aria-controls="ex4-tabs-4"
+                aria-selected="true"
+                >
+                  <div class="box-column-two">
+                    <img src="./assets/images/retangule.png" alt="retangule">
+                    <img src="./assets/images/retangule.png" alt="retangule">
+                  </div>
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex5-tab-5"
+                data-mdb-toggle="tab"
+                href="#ex5-tabs-5"
+                role="tab"
+                aria-controls="ex5-tabs-5"
+                aria-selected="false"
+                >
+
+                <div class="box-column-one">
+                  <img src="./assets/images/Retangule2.png" alt="">
+                </div>
+              
+              </a>
+            </li>
+          </ul>
+
+
+          <!--CARDS EM 2 COLUNAS-->
+          <div class="tab-pane fade show active teste-tab-novos" id="ex4-tabs-4" role="tabpanel" aria-labelledby="ex4-tab-4">
+            <div class="area-cards-2-colunas">
+
+              <!--AREA CARDS LADO ESQUERDO-->
+              <!--DEVERÁ CONTER 6 CARDS POR PAGE-->
+              <div class="area-cards-lado-esquerdo">
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+               
+              </div>   
+    
+              <!--AREA CARDS LADO DIREITO-->
+              <!--DEVERÁ CONTER 6 CARDS POR PAGE-->
+              <div class="area-cards-lado-direito">   
+
+
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+
+              
+              </div>
+            </div>
+
+              <!--PAGINATION TAB NOVOS-->
+              <nav aria-label="..." class="">
+                <ul class="pagination pagination-tab-mobile-novos">
+                  <li class="page-item">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li>
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
+
+          </div>
+
+
+          <!--CARDS EM 1 COLUNA-->
+          <div class="tab-pane fade" id="ex5-tabs-5" role="tabpanel" aria-labelledby="ex5-tab-5">
+           
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>  
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+              <!--PAGINATION TAB NOVOS-->
+              <nav aria-label="..." class="">
+                <ul class="pagination pagination-tab-mobile-novos">
+                  <li class="page-item">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li>
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+        <!---------------------------------------------------FIM DA TAB 2 NOVOS---------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+        <!-----------------------------------------------------TAB 3 TOP ITENS------------------------------------------------------------------>
+        <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex2-tab-3">
+        
+          <ul class="nav nav-tabs d-block d-sm-none d-md-none d-lg-none d-xl-none box-column" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex6-tab-6"
+                data-mdb-toggle="tab"
+                href="#ex6-tabs-6"
+                role="tab"
+                aria-controls="ex6-tabs-6"
+                aria-selected="true"
+                >
+                  <div class="box-column-two">
+                    <img src="./assets/images/retangule.png" alt="retangule">
+                    <img src="./assets/images/retangule.png" alt="retangule">
+                  </div>
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex7-tab-7"
+                data-mdb-toggle="tab"
+                href="#ex7-tabs-7"
+                role="tab"
+                aria-controls="ex7-tabs-7"
+                aria-selected="false"
+                >
+
+                <div class="box-column-one">
+                  <img src="./assets/images/Retangule2.png" alt="">
+                </div>
+              
+              </a>
+            </li>
+          </ul>
+
+          <!--CARDS EM 2 COLUNAS-->
+          <div class="tab-pane fade show active teste-tab-top-itens" id="ex6-tabs-6" role="tabpanel" aria-labelledby="ex6-tab-6">
+            <div class="area-cards-2-colunas">
+
+              <!--AREA CARDS LADO ESQUERDO-->
+              <!--DEVERÁ CONTER 6 CARDS POR PAGE-->
+              <div class="area-cards-lado-esquerdo">
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+                
+                <div class="card-lado-esquerdo-mobile">
+                  <div class="area-image-card-mobile-2-colunas">
+                    <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                  </div>
+                  <div class="especificacao-arma-card-mobile-2-colunas">
+                    <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                      Veterana de guerra
+                    </p>
+                  </div>
+                  <div class="content-details-product-arma-card-mobile-2-colunas">
+                    <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                      Nome da Skin
+                    </h5>
+                    <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                      Nome da arma
+                    </p>
+                    <h5 class="title-price-arma-card-mobile-2-colunas">
+                      R$ 99.999,00
+                    </h5>
+                  </div>
+                  <div class="area-btn-mobile-cta">
+                    <a href="#">
+                      <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                        <i class="bi bi-cart3"></i> Adicionar
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+               
+              </div>   
+    
+
+              <!--AREA CARDS LADO DIREITO-->
+              <!--DEVERÁ CONTER 6 CARDS POR PAGE-->
+              <div class="area-cards-lado-direito">   
+
+
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+
+                  <div class="card-lado-esquerdo-mobile">
+                    <div class="area-image-card-mobile-2-colunas">
+                      <img src="./assets/images/produto-card.jpg" alt="image-product" />
+                    </div>
+                    <div class="especificacao-arma-card-mobile-2-colunas">
+                      <p class="title-paragraph-especificacao-arma-card-mobile-2-colunas">
+                        Veterana de guerra
+                      </p>
+                    </div>
+                    <div class="content-details-product-arma-card-mobile-2-colunas">
+                      <h5 class="title-paragraph-nome-skin-arma-card-mobile-2-colunas">
+                        Nome da Skin
+                      </h5>
+                      <p class="subtitle-paragraph-nome-arma-card-mobile-2-colunas">
+                        Nome da arma
+                      </p>
+                      <h5 class="title-price-arma-card-mobile-2-colunas">
+                        R$ 99.999,00
+                      </h5>
+                    </div>
+                    <div class="area-btn-mobile-cta">
+                      <a href="#">
+                        <button type="button" class="btn-mobile-adicionar-produto-carrinho">
+                          <i class="bi bi-cart3"></i> Adicionar
+                        </button>
+                      </a>
+                    </div>
+  
+                  </div>
+
+              
+              </div>
+            </div>
+
+              <!--PAGINATION TAB TOP ITENS-->
+              <nav aria-label="..." class="">
+                <ul class="pagination pagination-tab-mobile-top-itens">
+                  <li class="page-item">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li>
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+
+
+          <!--CARDS EM 1 COLUNA-->
+          <div class="tab-pane fade" id="ex7-tabs-7" role="tabpanel" aria-labelledby="ex7-tab-7">
+            
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-mobile d-block d-sm-none d-md-none d-lg-none d-xl-none">
+              <div class="state-glock-mobile">
+                <p>Estado de conservacao</p>
+              </div>
+              <div class="area-image-produto-card-mobile">
+                <img src="./assets/images/produto-card.jpg" class="card-img-top  " alt="retangulo">
+              </div>
+              <div class="card-body-mobile">
+                <h3 class="card-title-mobile">Nome da Skin</h3>
+                <p class="card-subtitle-mobile">Nome da arma</p>
+                <h3 class="card-text-price-mobile">R$ 99.999.00</h3>
+                <a href="#">
+                  <button class="btn-carrinho-mobile" type="button">
+                    <i class="bi bi-cart3" ></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+              <!--PAGINATION TAB TOP ITENS-->
+              <nav aria-label="..." class="">
+                <ul class="pagination pagination-tab-mobile-top-itens">
+                  <li class="page-item">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li>
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
+
+
+          </div>
+        </div>
+        <!--------------------------------------------------FIM DA TAB 3 TOP ITENS--------------------------------------------------------------->
+      </div>
+    </div>
+  </main>
+  <!-----------------------------------------------FIM DA AREA CARDS PARA MOBILE---------------------------------------------------------------->
+    
+
+  
+
+  <main class="d-xs-none d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
+    <div class="container-fluid">
+
+          <!-- Tabs navs -->
+          <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+            <li class="nav-item item-tab" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex2-tab-1"
+                data-mdb-toggle="tab"
+                href="#ex2-tabs-1"
+                role="tab"
+                aria-controls="ex2-tabs-1"
+                style="color: #007E79;">Populares
+              </a>
+            </li>
+            <li class="nav-item item-tab" role="presentation">
+              <a
+                class="nav-link"
+                id="ex2-tab-2"
+                data-mdb-toggle="tab"
+                href="#ex2-tabs-2"
+                role="tab"
+                aria-controls="ex2-tabs-2"
+                aria-selected="false"
+                style="color: #007E79;"
+                >Novos</a>
+            </li>
+            <li class="nav-item item-tab" role="presentation">
+              <a
+                class="nav-link"
+                id="ex2-tab-3"
+                data-mdb-toggle="tab"
+                href="#ex2-tabs-3"
+                role="tab"
+                aria-controls="ex2-tabs-3"
+                aria-selected="false"
+                style="color: #007E79;"
+              >Top Itens</a>
+            </li>
+          </ul>
+      
+          <div class="chip-cookies">
+              A SkinTrade usa cookies para personalizar conteúdos e melhorar sua experiência. Ao continuar navegando, você concorda com a nossa
+              <a href="#" style="color: #7A04A5;">Política de cookies.</a>
+            <span class="closebtn" onclick="this.parentElement.style.display='none'" style="color: #333333">&times;</span>
+          </div>
+          
+          
+          <!-- Tabs content -->
+          <div class="tab-content" id="ex2-content">
+            <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
+
+              <!-- 1º linha com 4 cards-->
+              <div class="card-group">
+
+                <!-- 1º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho">
+                              <i class="bi bi-cart3 icon-btn-carrinho"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 2º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3 icon-btn-carrinho"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 3º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 4º card-->
+                <div class="card d-sm-none d-lg-block">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Fim da 1º linha dos cards-->
+
+
+              <!-- 2º Linha com 4 cards-->
+              <div class="card-group">
+                <!-- 1º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                 <!-- 2º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                 <!-- 3º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                 <!-- 4º card-->
+                <div class="card d-sm-none d-lg-block">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--Fim da 2º linha dos cards-->
+            </div>
+            <!--Fim dos CARDS 'POPULARES'-->
+
+
+            <!--TAB 2 (NOVOS) --> 
+            <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+
+              <!--1º linha com 4 cards-->
+              <div class="card-group">
+      
+                <!--CARDS 'NOVOS' PARA MOBILE-->
+                <ul class="nav nav-tabs mb-3 d-block d-sm-none d-md-none d-lg-none d-xl-none box-column" id="ex1" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link active"
+                          id="ex4-tab-4"
+                          data-mdb-toggle="tab"
+                          href="#ex4-tabs-4"
+                          role="tab"
+                          aria-controls="ex4-tabs-4"
+                          aria-selected="true"
+                          >
+                            <div class="box-column-two">
+                              <img src="./assets/images/retangule.png" alt="retangule">
+                              <img src="./assets/images/retangule.png" alt="retangule">
+                            </div>
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link"
+                          id="ex3-tab-3"
+                          data-mdb-toggle="tab"
+                          href="#ex3-tabs-3"
+                          role="tab"
+                          aria-controls="ex3-tabs-3"
+                          aria-selected="false"
+                          >
+      
+                          <div class="box-column-one">
+                            <img src="./assets/images/Retangule2.png" alt="">
+                          </div>
+                        
+                        </a>
+                      </li>
+                </ul>
+    
+                <!-- Tabs content -->
+                <div class="tab-content d-block d-sm-none d-md-none d-lg-none d-xl-none" id="ex1-content">
+                      <div class="tab-pane fade show active" id="ex4-tabs-4" role="tabpanel" aria-labelledby="ex4-tab-4">
+                  
+                        
+                          <!--Card em 2 colunas-->
+                        <div class="row column-two">
+                        
+                          <!-- 1º Coluna (Esquerda) com 3 cards -->
+                          <div class="col">
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <!-- 2º Coluna (Direita) com 3 cards -->
+                          <div class="col">
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/retangulo-card.png" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>  
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/retangulo-card.png" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+                            <!--Fim dos Cards-->
+                          </div>
+                        </div>
+                      </div>
+      
+    
+                      <!--Cards MOBILE em UMA COLUNA-->
+                      <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex3-tab-3">
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+
+
+
+
+                      </div>
+                </div>
+
+                 <!-- 1º card-->
+                  <div class="card">
+                    <ul class="item-link-card-home">
+                      <li>
+                        <a href="#">
+                          <div class="state-glock">
+                            <p class="text-glock">Estado de conservacao</p>
+                          </div>
+                          <div class="image">
+                            <img src="./assets/images/produto-card.jpg" />
+                          </div>
+                          <div class="content">
+                            <h4 class="title">
+                             Nome da Skin
+                            </h4>
+                            <h6 class="subtitle">
+                              Nome da arma
+                            </h6>
+                            <div class="info">
+                              <h4 class="price">R$ 99.999,00</h4>
+                              <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- 2º card-->
+                  <div class="card">
+                    <ul class="item-link-card-home">
+                      <li>
+                        <a href="#">
+                          <div class="state-glock">
+                            <p class="text-glock">Estado de conservacao</p>
+                          </div>
+                          <div class="image">
+                            <img src="./assets/images/produto-card.jpg" />
+                          </div>
+                          <div class="content">
+                            <h4 class="title">
+                             Nome da Skin
+                            </h4>
+                            <h6 class="subtitle">
+                              Nome da arma
+                            </h6>
+                            <div class="info">
+                              <h4 class="price">R$ 99.999,00</h4>
+                              <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- 3º card-->
+                  <div class="card">
+                    <ul class="item-link-card-home">
+                      <li>
+                        <a href="#">
+                          <div class="state-glock">
+                            <p class="text-glock">Estado de conservacao</p>
+                          </div>
+                          <div class="image">
+                            <img src="./assets/images/produto-card.jpg" />
+                          </div>
+                          <div class="content">
+                            <h4 class="title">
+                             Nome da Skin
+                            </h4>
+                            <h6 class="subtitle">
+                              Nome da arma
+                            </h6>
+                            <div class="info">
+                              <h4 class="price">R$ 99.999,00</h4>
+                              <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- 4º card-->
+                  <div class="card d-sm-none d-lg-block">
+                    <ul class="item-link-card-home">
+                      <li>
+                        <a href="#">
+                          <div class="state-glock">
+                            <p class="text-glock">Estado de conservacao</p>
+                          </div>
+                          <div class="image">
+                            <img src="./assets/images/produto-card.jpg" />
+                          </div>
+                          <div class="content">
+                            <h4 class="title">
+                             Nome da Skin
+                            </h4>
+                            <h6 class="subtitle">
+                              Nome da arma
+                            </h6>
+                            <div class="info">
+                              <h4 class="price">R$ 99.999,00</h4>
+                              <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <!--Fim da 1º linha com cards-->
+
+              <!--2º linha com 4 cards-->
+              <div class="card-group">   
+                <!-- 1º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                            <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                            <h4 class="title">
+                             Nome da Skin
+                            </h4>
+                            <h6 class="subtitle">
+                              Nome da arma
+                            </h6>
+                            <div class="info">
+                              <h4 class="price">R$ 99.999,00</h4>
+                              <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                            </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <!-- 2º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                            Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <!-- 3º card-->
+                <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                            Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+
+                <!-- 4º card-->
+                <div class="card d-sm-none d-lg-block">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                            Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--Fim da 2º linha com cards-->
+
+            </div>
+            <!--Fim da tab 'NOVOS'-->
+      
+
+
+            <!--Tab 3 (TOP ITENS) -->
+            <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex2-tab-3">
+
+              <!--Card para MOBILE-->
+              <ul class="nav nav-tabs mb-3 d-block d-sm-none d-md-none d-lg-none d-xl-none box-column" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="ex5-tab-5"
+                    data-mdb-toggle="tab"
+                    href="#ex5-tabs-5"
+                    role="tab"
+                    aria-controls="ex5-tabs-5"
+                    aria-selected="true"
+                  >
+                    <div class="box-column-two">
+                      <img src="./assets/images/retangule.png" alt="retangule">
+                      <img src="./assets/images/retangule.png" alt="retangule">
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="ex6-tab-6"
+                    data-mdb-toggle="tab"
+                    href="#ex6-tabs-6"
+                    role="tab"
+                    aria-controls="ex6-tabs-6"
+                    aria-selected="false"
+                  >
+                    <div class="box-column-one">
+                      <img src="./assets/images/Retangule2.png" alt="">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+      
+              <!-- Tabs content -->
+              <div class="tab-content d-block d-sm-none d-md-none d-lg-none d-xl-none" id="ex1-content">
+                <div class="tab-pane fade show active" id="ex5-tabs-5" role="tabpanel" aria-labelledby="ex5-tab-5">
+                  <!--Card em 2 colunas-->
+                  <div class="row column-two">
+                    <!-- 1º Coluna (Esquerda) com 3 cards -->
+                    <div class="col">
+                      <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                        <div class="state-glock-2">
+                          <p>Estado de conservacao</p>
+                        </div>
+                        <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                        <div class="card-body">
+                          <h3 class="card-title-2">Nome da Skin</h3>
+                          <p class="card-subtitle-2">Nome da arma</p>
+                          <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                          <a href="#">
+                            <button class="btn-carrinho-2" type="button">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+      
+                      <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                        <div class="state-glock-2">
+                          <p>Estado de conservacao</p>
+                        </div>
+                        <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title-2">Nome da Skin</h3>
+                            <p class="card-subtitle-2">Nome da arma</p>
+                            <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho-2" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+                        <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock-2">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                            <div class="card-body">
+                              <h3 class="card-title-2">Nome da Skin</h3>
+                              <p class="card-subtitle-2">Nome da arma</p>
+                              <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                              <a href="#">
+                                <button class="btn-carrinho-2" type="button">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <!-- 2º Coluna (Direita) com 3 cards -->
+                        <div class="col">
+      
+                          <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                            <div class="state-glock-2">
+                              <p>Estado de conservacao</p>
+                            </div>
+                            <img src="./assets/images/produto-card.jpg" class="card-img-top-2" alt="retangulo">
+                            <div class="card-body">
+                              <h3 class="card-title-2">Nome da Skin</h3>
+                              <p class="card-subtitle-2">Nome da arma</p>
+                              <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho-2" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/retangulo-card.png" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>  
+      
+                            <div class="card-two-column d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                              <div class="state-glock-2">
+                                <p>Estado de conservacao</p>
+                              </div>
+                              <img src="./assets/images/retangulo-card.png" class="card-img-top-2" alt="retangulo">
+                              <div class="card-body">
+                                <h3 class="card-title-2">Nome da Skin</h3>
+                                <p class="card-subtitle-2">Nome da arma</p>
+                                <h3 class="card-text-price-2">R$ 99.999.00</h3>
+                                <a href="#">
+                                  <button class="btn-carrinho-2" type="button">
+                                    <i class="bi bi-cart3"></i>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+                            <!--Fim dos Cards-->
+                          </div>
+                  </div>
+                </div>
+                <!--Cards em UMA COLUNA-->
+                <div class="tab-pane fade" id="ex6-tabs-6" role="tabpanel" aria-labelledby="ex6-tab-6">
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+      
+      
+                        <div class="card d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                          <div class="state-glock">
+                            <p>Estado de conservacao</p>
+                          </div>
+                          <img src="./assets/images/produto-card.jpg" class="card-img-top" alt="retangulo">
+                          <div class="card-body">
+                            <h3 class="card-title">Nome da Skin</h3>
+                            <p class="card-subtitle">Nome da arma</p>
+                            <h3 class="card-text-price">R$ 99.999.00</h3>
+                            <a href="#">
+                              <button class="btn-carrinho" type="button">
+                                <i class="bi bi-cart3"></i>
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                         
+                </div>
+              </div>
+      
+              <!-- 1º linha com 4 CARDS-->
+              <div class="card-group">
+
+                 <!-- 1º card-->
+                 <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                 <!-- 2º card-->
+                 <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                 <!-- 3º card-->
+                 <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                 <!-- 4º card-->
+                 <div class="card d-sm-none d-lg-block">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+      
+              </div>
+      
+              <!--2º Linha com 4 CARDS-->
+              <div class="card-group">
+
+                 <!-- 1º card-->
+                 <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                 <!-- 2º card-->
+                 <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                 <!-- 3º card-->
+                 <div class="card">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                 <!-- 4º card-->
+                 <div class="card d-sm-none d-lg-block">
+                  <ul class="item-link-card-home">
+                    <li>
+                      <a href="#">
+                        <div class="state-glock">
+                          <p class="text-glock">Estado de conservacao</p>
+                        </div>
+                        <div class="image">
+                          <img src="./assets/images/produto-card.jpg" />
+                        </div>
+                        <div class="content">
+                          <h4 class="title">
+                           Nome da Skin
+                          </h4>
+                          <h6 class="subtitle">
+                            Nome da arma
+                          </h6>
+                          <div class="info">
+                            <h4 class="price">R$ 99.999,00</h4>
+                            <p class="btn-carrinho"><i class="bi bi-cart3"></i></p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                    
+      
+              </div>
+            </div>
+
+            <!--Fim da tab 3 (TOP ITEMS) -->
+          </div>
+
+    </div>
+  </main>
+
+  
+  <!--Footer-->
+  <section id="footer">
+    
+    <!--Footer para MOBILE-->
+    <div class="container d-block d-sm-block d-md-none d-lg-none d-xl-none">
+
+            <div class="acordeon">
+              <!--Accordeon para MOBILE-->
+              <div class="row">
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                  <div id="accordion">
+                    <div class="acordeao-1">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #fff;">
+                            Principal
+                            <i class="bi bi-plus"></i>
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          <ul class="text-white coluna1">
+                            <li><a href="#"  style="color: white ">Loja</a></li>
+                            <li><a href="#"  style="color: white ">Venda</a></li>
+                            <li><a href="#"  style="color: white ">Troca</a></li>
+                            <li><a href="#"  style="color: white ">FAQ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                <div class="acordeao-2">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #fff; ">
+                        Assistência
+                        <i class="bi bi-plus"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="text-white coluna2">
+                        <li><a href="#"  style="color: white ">Status dos Itens</a></li>
+                        <li><a href="#"  style="color: white ">Bots de Troca</a></li>
+                        <li><a href="#"  style="color: white ">Política de Preços</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="acordeao-3">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #fff;">
+                        Recursos
+                        <i class="bi bi-plus"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="text-white coluna3">
+                          <li><a href="#"  style="color: white ">Política de Privacidade</a></li>
+                          <li><a href="#"  style="color: white ">Pagamentos Recorrentes</a></li>
+                          <li><a href="#"  style="color: white ">Política de Cookies</a></li>
+                          <li><a href="#"  style="color: white ">Blog</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="logo-footer-mobile">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/vector2.png" alt="logo" height="90px" width="130px" class="logo-footer"></img>
+            </a>
+          </div>
+          <div class="container icons-footer-mobile">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <ul class="media-link">
+                  <li>
+                    <a class="media1" href="#"><i class="bi bi-facebook" style="color: white;"></i></a>
+                    <a class="media2" href="#"><i class="bi bi-discord social2" style="color: white;"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <ul class="media-link">
+                  <li>
+                    <a class="media3" href="#"><i class="bi bi-instagram" style="color: white;"></i></a>
+                    <a class="media4" href="#"><i class="fab fa-steam social3" style="color: white;"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Texto para mobile-->
+          <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+            <div class="area-paragraph-footer-mobile">
+              <p class="title-parapraph-footer-mobile">copyright &copy; 2021 SkinTrade - Todos os direitos reservados.</p>
+            </div>
+          </div>  
+    </div>
+
+    <!--Footer para DESKTOP-->
+      <div class="container footer-teste links-footer d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <div class="row">
+          <div class="col">
+            <h2 class="title-footer">Principal</h2>
+            <ul class="item-footer-principal">
+              <li><a href="#">Loja</a></li>
+              <li><a href="#">Venda</a></li>
+              <li><a href="#">Troca</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+ 
+          <div class="col">
+            <h2 class="title-footer-assistencia">Assistencia</h2>
+            <ul class="item-footer-assitencia">
+              <li><a href="#">Status dos Itens</a></li>
+              <li><a href="#">Bots de troca</a></li>
+              <li><a href="#">Politica de preços</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h2 class="title-footer-recursos">Recursos</h2>
+            <ul class="item-footer-recursos">
+              <li><a href="#">Politica de Privacidade</a></li>
+              <li><a href="#">Pagamentos recorrrentes</a></li>
+              <li><a href="#">Politica de cookies</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col">
+            <div class="image-footer" style="width: 80%;">
+              <img src="./assets/images/logo-vector.png"/>
+            </div>
+            <ul class="icons-footer">
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-discord"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="fab fa-steam"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="paragrafo-footer">copyright &copy; 2021 SkinTrade - Todos os direitos reservados.</h2>
+      </div>
+  </section>
+
+
+    <!--Bootstrap JS, Jquery And Popper-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
