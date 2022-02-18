@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>acesso ao front end</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+
+        async function acessaDados() {
+
+            let response = await fetch('http://localhost:3000/consultarCampos');  //http://localhost:3000/cadastro/
+
+            console.log(response);
+
+        }
+
+        acessaDados();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
