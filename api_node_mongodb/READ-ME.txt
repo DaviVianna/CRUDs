@@ -1,0 +1,2 @@
+NPM I => para instalar as depedências do projeto
+NODEMON SERVER.JS => Para inicializar o projeto
